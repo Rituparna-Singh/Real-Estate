@@ -1,0 +1,65 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:600,300);
+* {
+	margin: 0;
+	padding: 0;
+}
+.hero {
+	height: 100vh;
+	background: linear-gradient(45deg, rgba(6, 1, 2, 0.43), rgba(30, 31, 32, 0.7), rgba(44, 43, 43, 0.7), rgba(59, 60, 62, 0.7), rgba(78, 82, 82, 0.266)) 0 0 / 1000% no-repeat, url("Image/Contact-bg.jpg") 0 0 / cover no-repeat;
+	-webkit-animation: gradientAnimation 40s ease infinite;
+	animation: gradientAnimation 40s ease infinite;
+}
+@-webkit-keyframes gradientAnimation {
+	0%   { background-position: 0% 30%, 0 0;}
+	50%  { background-position: 100% 70%, 0 0;}
+	100% { background-position: 0% 30%, 0 0;}
+}
+@keyframes gradientAnimation {
+	0%   { background-position: 0% 30%, 0 0;}
+	50%  { background-position: 100% 70%, 0 0;}
+	100% { background-position: 0% 30%, 0 0;}
+}
+h1 {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	color: #fff;
+	font : normal 600 72px/1 'Open Sans', sans-serif;
+	text-align: center;
+	white-space: nowrap;
+}
+h1 span {
+	display: block;
+	margin-top: 1em;
+	font-size: 40px;
+	font-weight: 300;
+}
+
+@media only screen and (max-width : 320px) {
+	h1{
+		font-size: 25px;
+	}
+	h1 span{
+		font-size: 20px;
+	}
+}
+
+@media only screen and (max-width : 375px) {
+	h1{
+		font-size: 35px;
+	}
+	h1 span{
+		font-size: 25px;
+	}
+}
+
+@media only screen and (max-width : 425px) {
+	h1{
+		font-size: 5px;
+	}
+	h1 span{
+		font-size: 30px;
+	}
+}
